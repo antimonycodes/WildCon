@@ -3,11 +3,15 @@ import React from "react";
 const Frog = () => {
   return (
     <>
-      <div className="flex gap-10 mb-[5rem]">
-        <div className="basis-[40%]">
-          <img src="/assets/frog.png" alt="" className=" w-full object-cover" />
+      <div className="w-full h-fit flex flex-col gap-10 mb-[5rem] md:flex-row">
+        <div className="basis-[40%] w-full h-[400px]">
+          <img
+            src="/assets/frog.png"
+            alt=""
+            className=" w-full  h-full object-cover"
+          />
         </div>
-        <div className="basis-[60%] my-8">
+        <div className="basis-[60%] my-8 w-full">
           <h1 className="text-[42px] mb-4 mr-4 leading-[52.5px]">
             Frogs drink water through their <br /> skin
           </h1>

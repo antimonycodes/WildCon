@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import HomeHero from "../components/home/HomeHero";
 import HomeAbout from "../components/home/HomeAbout";
+import HomeGallery from "../components/home/HomeGallery";
 
 const Homepage = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -20,6 +21,7 @@ const Homepage = () => {
     <div>
       <HomeHero isDarkMode={isDarkMode} onToggle={handleDarkModeToggle} />
       <HomeAbout />
+      <HomeGallery />
     </div>
   );
 };

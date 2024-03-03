@@ -1,0 +1,55 @@
+
+.grid {
+    width: 100%;
+    height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3,1fr);
+  row-gap: 2rem;
+  column-gap: 3rem;
+  grid-template-areas:
+    "buffalo lion lion zebra"
+    "drill-monkey  lion lion  antelope"
+    "gazelle gazelle leopard leopard";
+}
+.grid img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+ /* Maintain aspect ratio and cover entire grid item */
+}
+
+.buffalo {
+  grid-area: buffalo;
+
+}
+
+.lion {
+  grid-area: lion;
+  /* width: 504px;
+  height: 646px; */
+  
+}
+
+.zebra {
+  grid-area: zebra;
+  width: 362px;
+  height: 260px;
+}
+
+.monkey {
+  grid-area: drill-monkey;
+}
+
+.antelope {
+  grid-area: antelope;
+  margin-top: 2rem;
+}
+
+.gazelle {
+  grid-area: gazelle;
+}
+
+.leopard {
+  grid-area: leopard;
+}
